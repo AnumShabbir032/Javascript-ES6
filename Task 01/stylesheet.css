@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#b-btn {
+    border: 1px solid #00aaaf;
+    outline: none;
+    font-size: 14px;
+    background-color: #71bee1;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.container{
+    border: 1px solid;
+    padding: 20px;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+fieldset {
+    height: 95vh;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width:50%;
+    border: 1px solid rgb(207, 206, 206);
+
+}
+
+button {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+}
