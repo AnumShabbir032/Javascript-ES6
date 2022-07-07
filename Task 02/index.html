@@ -8,6 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <fieldset>
+            <h1>Even or Odd</h1>
+
+            <form onsubmit="checkvalue(); return false;">
+
+                <label for="numCheck"> Check number</label>
+                <input type="number" id="numCheck" min="1" placeholder="Enter any number here..." >
+                <br />
+                <button id="b-btn" type="submit">Check Value</button>
+            </form>
+            <h3 id="result"></h3>
+        </fieldset>
+    </div>
 </body>
+<script src="app.js"></script>
 </html>
