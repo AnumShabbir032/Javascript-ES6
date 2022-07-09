@@ -14,16 +14,17 @@ function percentage() {
     //   then Add all subjects value
 
     let totalMarks = parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1) +
-        parseInt(subject1);
-
+        parseInt(subject2) +
+        parseInt(subject3) +
+        parseInt(subject4) +
+        parseInt(subject5) +
+        parseInt(subject6) +
+        parseInt(subject7) +
+        parseInt(subject8) +
+        parseInt(subject9) +
+        parseInt(subject10);
+ 
+        console.log(totalMarks);
     document.querySelector("#totalMarks").innerHTML = `Total Marks ${totalMarks}`
 
     let result = totalMarks / 10;
