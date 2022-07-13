@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Temperature App</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <h1>Temperature Check</h1>
+
+            <form onsubmit="tempCheck(); return false;">
+
+                <label for="checkTemp"> Check number</label>
+                <input type="number" id="checkTemp" min="1" placeholder="Enter any number here..." >
+                <br />
+                <button id="b-btn" type="submit">Temperature Check</button>
+            </form>
+            <h3 id="result"></h3>
+        </fieldset>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
