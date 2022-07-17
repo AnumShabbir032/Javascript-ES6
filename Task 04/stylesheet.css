@@ -1,10 +1,83 @@
-.first-cont{
-    /* border: 1px solid blue !important; */
+body{
+    background-color: #000000 !important;
+/* background-image: linear-gradient(147deg, #000000 0%, #434343 74%) !important; */
 }
-.h1{
+.first-cont {
+    border: 1px solid #444444ed !important;
+    width: 90% !important;
+    margin: 50px auto !important;
+    border-radius: 25px;
+    font-family: monospace !important;
+    color: #ffffff !important;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.h1 {
     margin: 30px !important;
+    font-family: monospace !important;
+    font-weight: 600 !important;
 }
-/* @media only screen and (max-width: 600px) {
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e61a !important;
+    text-align: center;
+    font-size: 20px;
+   color:  darkgrey;
+}
+.table td, .table th {
+    border-top: 1px solid #dee2e61a !important;
+    color: darkgrey;
+    text-align: center;
+}
+input {
+    padding: 10px 14px;
+    font-size: 14px !important;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: text;
+    color: #666666;
+    /* background-color: #202427; */
+    /* background-color: #43494e; */
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000e0 74%);;
+    border-radius: 25px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0.05 !important; 
+}
+input:focus{
+    background-color: #666666 !important;
+    color: #666666;
+}
+button {
+    background-color: #2d3436!important; /* Green */
+    border: none !important;
+    color: white !important;
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 25px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+    margin: none !important;
+    cursor: pointer !important;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s !important;
+  }
+  button:focus{
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important;
+  }
+
+
+@media only screen and (max-width: 600px) {
     .container {
         width: 100%;
         height: 100vh;
@@ -19,4 +92,4 @@
         margin: 15px;
         font-size: 27px;
     }
-} */
+}
