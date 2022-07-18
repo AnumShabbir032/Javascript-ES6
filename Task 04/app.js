@@ -5,13 +5,13 @@ function chekper1() {
     let subperc = subperc_1.toFixed(2);
 
 
-    if(marks_1 > 100){
-        document.querySelector("#subperc_1").innerHTML  = `Invalid Mark`;
+    if (marks_1 > 100) {
+        document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
     }
-    else if(marks_1 == ""){
-        document.querySelector("#subperc_1").innerHTML  = `Input is empty`;
+    else if (marks_1 == "") {
+        document.querySelector("#subperc_1").innerHTML = `Input is empty`;
     }
-    else{
+    else {
         document.querySelector("#subperc_1").innerHTML = `${subperc}%`;
     }
 }
@@ -20,14 +20,14 @@ function chekper2() {
     let marks_2 = document.querySelector("#marks_2").value;
     let subperc_2 = marks_2 / 100 * 100;
     let subperc = subperc_2.toFixed(2);
-    
-    if(marks_2 > 100){
-        document.querySelector("#subperc_2").innerHTML  = `Invalid Mark`;
+
+    if (marks_2 > 100) {
+        document.querySelector("#subperc_2").innerHTML = `Invalid Mark`;
     }
-    else if(marks_2 == ""){
-        document.querySelector("#subperc_2").innerHTML  = `Input is empty`;
+    else if (marks_2 == "") {
+        document.querySelector("#subperc_2").innerHTML = `Input is empty`;
     }
-    else{
+    else {
         document.querySelector("#subperc_2").innerHTML = `${subperc}%`;
     }
 }
@@ -37,13 +37,13 @@ function chekper3() {
     let subperc_3 = marks_3 / 100 * 100;
     let subperc = subperc_3.toFixed(2);
 
-    if(marks_3 > 100){
-        document.querySelector("#subperc_3").innerHTML  = `Invalid Mark`;
+    if (marks_3 > 100) {
+        document.querySelector("#subperc_3").innerHTML = `Invalid Mark`;
     }
-    else if(marks_3 == ""){
-        document.querySelector("#subperc_3").innerHTML  = `Input is empty`;
+    else if (marks_3 == "") {
+        document.querySelector("#subperc_3").innerHTML = `Input is empty`;
     }
-    else{
+    else {
         document.querySelector("#subperc_3").innerHTML = `${subperc}%`;
     }
 }
@@ -53,13 +53,13 @@ function chekper4() {
     let subperc_4 = marks_4 / 100 * 100;
     let subperc = subperc_4.toFixed(2);
 
-    if(marks_4 > 100){
-        document.querySelector("#subperc_4").innerHTML  = `Invalid Mark`;
+    if (marks_4 > 100) {
+        document.querySelector("#subperc_4").innerHTML = `Invalid Mark`;
     }
-    else if(marks_4 == ""){
-        document.querySelector("#subperc_4").innerHTML  = `Input is empty`;
+    else if (marks_4 == "") {
+        document.querySelector("#subperc_4").innerHTML = `Input is empty`;
     }
-    else{
+    else {
         document.querySelector("#subperc_4").innerHTML = `${subperc}%`;
     }
 }
@@ -69,13 +69,13 @@ function chekper5() {
     let subperc_5 = marks_5 / 100 * 100;
     let subperc = subperc_5.toFixed(2);
 
-    if(marks_5 > 100){
-        document.querySelector("#subperc_5").innerHTML  = `Invalid Mark`;
+    if (marks_5 > 100) {
+        document.querySelector("#subperc_5").innerHTML = `Invalid Mark`;
     }
-    else if(marks_5 == ""){
-        document.querySelector("#subperc_5").innerHTML  = `Input is empty`;
+    else if (marks_5 == "") {
+        document.querySelector("#subperc_5").innerHTML = `Input is empty`;
     }
-    else{
+    else {
         document.querySelector("#subperc_5").innerHTML = `${subperc}%`;
     }
 }
@@ -95,48 +95,51 @@ function percentage() {
         parseInt(marks_4) +
         parseInt(marks_5);
 
-// Validation on Obtained Marks result
+    // Validation on Obtained Marks result
 
-    if(ObtainedMarks > 501){
+    if (ObtainedMarks > 501) {
         document.querySelector("#obtMarks").innerHTML = `Invalid Marks`;
     }
-    else if(marks_1 == "" && marks_2 ==""||  marks_3 == "" && marks_4 == "" || marks_5 == ""){
+    else if (ObtainedMarks = " ") {
         document.querySelector("#obtMarks").innerHTML = `Fill all inputs first`;
     }
-    else{
+    else if (marks_1 == "" && marks_2 == "" || marks_3 == "" && marks_4 == "" || marks_5 == "") {
+        document.querySelector("#obtMarks").innerHTML = `Fill all inputs first`;
+    }
+    else {
         document.querySelector("#obtMarks").innerHTML = `${ObtainedMarks}`;
     }
 
 
-  
-// Percentage Formula
+
+    // Percentage Formula
     var percentageValue = (ObtainedMarks / 500) * 100;
 
-//The toFixed() method formats a number using fixed-point notation.
+    //The toFixed() method formats a number using fixed-point notation.
 
     let percentage = percentageValue.toFixed(2);
 
 
-//  Conditions On Percentage Grading   
+    //  Conditions On Percentage Grading   
     if (percentage >= 80) {
         document.querySelector("#percentage").innerHTML = `${percentage}%  (A+)`;
-        } 
-        else if (percentage >= 70 && percentage < 80) {
+    }
+    else if (percentage >= 70 && percentage < 80) {
         document.querySelector("#percentage").innerHTML = `${percentage}% (A)`;
-        }
-         else if (percentage >= 60 && percentage < 70) {
-            document.querySelector("#percentage").innerHTML = `${percentage}% (B)`;
-        } 
-        else if(percentage >= 50 && percentage < 60){
-            document.querySelector("#percentage").innerHTML = `${percentage}% (C)`;
-        }
-        else if(percentage >= 40 && percentage < 50){
-            document.querySelector("#percentage").innerHTML = `${percentage}% (D)`;
-        }
-        else if(percentage > ""){
-            document.querySelector("#percentage").innerHTML = `Invalid Result`;
-        }
-        else{
-            document.querySelector("#percentage").innerHTML = `${percentage}% (Fail)`;
-        }
+    }
+    else if (percentage >= 60 && percentage < 70) {
+        document.querySelector("#percentage").innerHTML = `${percentage}% (B)`;
+    }
+    else if (percentage >= 50 && percentage < 60) {
+        document.querySelector("#percentage").innerHTML = `${percentage}% (C)`;
+    }
+    else if (percentage >= 40 && percentage < 50) {
+        document.querySelector("#percentage").innerHTML = `${percentage}% (D)`;
+    }
+    else if (percentage > "") {
+        document.querySelector("#percentage").innerHTML = `Invalid Result`;
+    }
+    else {
+        document.querySelector("#percentage").innerHTML = `${percentage}% (Fail)`;
+    }
 }
