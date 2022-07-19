@@ -13,77 +13,97 @@
 </head>
 
 <body>
-        <div class="first-cont"> 
+    <div class="first-cont">
 
-            <h1 class="text-center h1">Percentage Calculator</h1>
-
-
-                <table class="table table-hover">
-
-                    <thead>
-                        <tr>
-                            <th scope="col">Subject</th>
-                            <th scope="col">Total Marks</th>
-                            <th scope="col">Obtained Marks</th>
-                            <th scope="col">Check</th>
-                            <th scope="col">Percentage</th>
-                        </tr>
-                    </thead>
+        <h1 class="text-center h1">Percentage Calculator</h1>
 
 
-                    <tbody>
-                        
-                        <tr> 
-                            <td><input type="text" id="subject_1" placeholder="Enter your first subject" required></td>
-                            <td>100</td>
-                            <td><input type="number" id="marks_1" placeholder="Enter your first mark" required>
-                            </td>
-                            <td><button class="btn" onclick="chekper1();">Get</button></td>
-                            <td id="subperc_1"></td>
-                        </tr>
-                    </form>
-                        <tr>
-                            <td><input type="text" id="subject_2" placeholder="Enter your second subject" required></td>
-                            <td>100</td>
-                            <td><input type="number" id="marks_2" placeholder="Enter your second mark" required></td>
-                            <td><button class="btn" onclick="chekper2();">Get</button></td>
-                            <td id="subperc_2"></td>
-                        </tr>
+        <table class="table table-hover">
 
-                        <tr>
-                            <td><input type="text" id="subject_3" placeholder="Enter your third subject" required></td>
-                            <td>100</td>
-                            <td><input type="number" id="marks_3" placeholder="Enter your third mark" required></td>
-                            <td><button class="btn" onclick="chekper3();">Get</button></td>
-                            <td id="subperc_3"></td>
-                        </tr>
+            <thead>
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Total Marks</th>
+                    <th scope="col">Obtained Marks</th>
+                    <th scope="col">Check</th>
+                    <th scope="col">Percentage</th>
+                </tr>
+            </thead>
 
-                        <tr>
-                            <td><input type="text" id="subject_4" placeholder="Enter your fourth subject" required></td>
-                            <td>100</td>
-                            <td><input type="number" id="marks_4" placeholder="Enter your fourth mark" required></td>
-                            <td><button class="btn" onclick="chekper4();">Get</button></td>
-                            <td id="subperc_4"></td>
-                        </tr>
 
-                        <tr>
-                            <td><input type="text" id="subject_5" placeholder="Enter your fifth subject" required></td>
-                            <td>100</td>
-                            <td><input type="number" id="marks_5" placeholder="Enter your fifth mark" required></td>
-                            <td><button class="btn" onclick="chekper5();">Get</button></td>
-                            <td id="subperc_5"></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="1">500</td>
-                            <td id="obtMarks"></td>
-                            <td><button class="btn" onclick="percentage()">Percentage</button></td>
-                            <td id="percentage"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            
-        </div>
+            <tbody>
+
+                <tr>
+                    <td><input type="text" class="inputCont" id="subject_1" placeholder="Enter your first subject"
+                            required autocomplete="off">
+                        <br />
+                        <small id="error1">Error</small>
+                    </td>
+                    <td>100</td>
+                    <td><input type="number" id="marks_1" placeholder="Enter your first mark" required>
+                    </td>
+                    <td><button class="btn" onclick="chekper1();">Get</button></td>
+                    <td id="subperc_1"></td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td><input type="text" id="subject_2" placeholder="Enter your second subject" required
+                            autocomplete="off">
+                        <br />
+                        <small id="error2">Error</small>
+                    </td>
+                    <td>100</td>
+                    <td><input type="number" id="marks_2" placeholder="Enter your second mark" required></td>
+                    <td><button class="btn" onclick="chekper2();">Get</button></td>
+                    <td id="subperc_2"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" id="subject_3" placeholder="Enter your third subject" required>
+                        <br />
+                        <small id="error3">Error</small>
+                    </td>
+                    <td>100</td>
+                    <td><input type="number" id="marks_3" placeholder="Enter your third mark" required></td>
+                    <td><button class="btn" onclick="chekper3();">Get</button></td>
+                    <td id="subperc_3"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" id="subject_4" placeholder="Enter your fourth subject" required>
+                        <br />
+                        <small id="error4">Error</small>
+                    </td>
+                    <td>100</td>
+                    <td><input type="number" id="marks_4" placeholder="Enter your fourth mark" required></td>
+                    <td><button class="btn" onclick="chekper4();">Get</button></td>
+                    <td id="subperc_4"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" id="subject_5" placeholder="Enter your fifth subject" required>
+                        <br />
+                        <small id="error5">Error</small>
+                    </td>
+                    <td>100</td>
+                    <td><input type="number" id="marks_5" placeholder="Enter your fifth mark" required></td>
+                    <td><button class="btn" onclick="chekper5();">Get</button></td>
+                    <td id="subperc_5"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="1">500</td>
+                    <td id="obtMarks"></td>
+                    <td><button class="btn" onclick="percentage()">Percentage</button></td>
+                    <td id="percentage"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
 </body>
 
 

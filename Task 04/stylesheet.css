@@ -48,6 +48,36 @@ input:focus{
     background-color: #666666 !important;
     color: #666666;
 }
+#error1{
+    text-align: left;
+    display: none;
+    padding: 7px 10px;
+    margin: 2px 5px;
+}
+#error2{
+    text-align: left;
+    display: none;
+    padding: 7px 10px;
+    margin: 2px 5px;
+}
+#error3{
+    text-align: left;
+    display: none;
+    padding: 7px 10px;
+    margin: 2px 5px;
+}
+#error4{
+    text-align: left;
+    display: none;
+    padding: 7px 10px;
+    margin: 2px 5px;
+}
+#error5{
+    text-align: left;
+    display: none;
+    padding: 7px 10px;
+    margin: 2px 5px;
+}
 button {
     background-color: #2d3436!important; 
     border: none !important;
@@ -99,5 +129,12 @@ button {
         width: 95% !important;
         font-size: 10px !important;
         border-radius: 0 !important;
+    }
+    #error {
+        text-align: left;
+        display: none;
+        padding: 5px 4px;
+        margin: 2px 5px;
+        font-size: 7px;
     }
 }
