@@ -3,14 +3,15 @@ function chekper1() {
     let marks_1 = document.querySelector("#marks_1").value;
     let subject_1 = document.querySelector("#subject_1").value;
     let error1 = document.getElementById("error1");
+    let errormark1 = document.getElementById("errormark1")
     let letters = /^[A-Za-z ]*$/;
     let subperc_1 = marks_1 / 100 * 100;
     let subperc = subperc_1.toFixed(2);
 
 
-
     if (subject_1 == '') {
         error1.innerHTML = "It must be filled";
+        // error1.innerHTML.remove("It must be filled");
         error1.style.display = "block";
         return false;
     }
@@ -20,20 +21,30 @@ function chekper1() {
         return false;
     }
     else if (marks_1 > 100) {
-        document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        // document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        errormark1.innerHTML = "Not more then 100";
+        errormark1.style.display = "block";
+        return false;
     }
     else if (marks_1 == "") {
-        document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        // document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        errormark1.innerHTML = "It must be filled";
+        errormark1.style.display = "block";
+        return false;
     }
     else {
         document.querySelector("#subperc_1").innerHTML = `${subperc}%`;
     }
 }
+
+
+
 // subject 2 result
 function chekper2() {
     let marks_2 = document.querySelector("#marks_2").value;
     let subject_2 = document.querySelector("#subject_2").value;
     let error2 = document.getElementById("error2");
+    let errormark2 = document.getElementById("errormark2")
     let letters = /^[A-Za-z ]*$/;
     let subperc_2 = marks_2 / 100 * 100;
     let subperc = subperc_2.toFixed(2);
@@ -48,25 +59,32 @@ function chekper2() {
         error2.style.display = "block";
         return false;
     }
-
-
-
     else if (marks_2 > 100) {
-        document.querySelector("#subperc_2").innerHTML = `Invalid Mark`;
+        // document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        errormark2.innerHTML = "Not more then 100";
+        errormark2.style.display = "block";
+        return false;
     }
     else if (marks_2 == "") {
-        document.querySelector("#subperc_2").innerHTML = `Input is empty`;
+        // document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        errormark2.innerHTML = "It must be filled";
+        errormark2.style.display = "block";
+        return false;
     }
     else {
         document.querySelector("#subperc_2").innerHTML = `${subperc}%`;
     }
 }
 
+
+
+
 // subject 3 result
 function chekper3() {
     let marks_3 = document.querySelector("#marks_3").value;
     let subject_3 = document.querySelector("#subject_3").value;
     let error3 = document.getElementById("error3");
+    let errormark3 = document.getElementById("errormark3")
     let letters = /^[A-Za-z ]*$/;
     let subperc_3 = marks_3 / 100 * 100;
     let subperc = subperc_3.toFixed(2);
@@ -81,24 +99,31 @@ function chekper3() {
         error3.style.display = "block";
         return false;
     }
-
-
-
     else if (marks_3 > 100) {
-        document.querySelector("#subperc_3").innerHTML = `Invalid Mark`;
+        // document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        errormark3.innerHTML = "Not more then 100";
+        errormark3.style.display = "block";
+        return false;
     }
     else if (marks_3 == "") {
-        document.querySelector("#subperc_3").innerHTML = `Input is empty`;
+        // document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        errormark3.innerHTML = "It must be filled";
+        errormark3.style.display = "block";
+        return false;
     }
     else {
         document.querySelector("#subperc_3").innerHTML = `${subperc}%`;
     }
 }
+
+
+
 // subject 4 result
 function chekper4() {
     let marks_4 = document.querySelector("#marks_4").value;
     let subject_4 = document.querySelector("#subject_4").value;
     let error4 = document.getElementById("error4");
+    let errormark4 = document.getElementById("errormark4");
     let letters = /^[A-Za-z ]*$/;
     let subperc_4 = marks_4 / 100 * 100;
     let subperc = subperc_4.toFixed(2);
@@ -113,23 +138,31 @@ function chekper4() {
         error4.style.display = "block";
         return false;
     }
-
-
     else if (marks_4 > 100) {
-        document.querySelector("#subperc_4").innerHTML = `Invalid Mark`;
+        // document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        errormark4.innerHTML = "Not more then 100";
+        errormark4.style.display = "block";
+        return false;
     }
     else if (marks_4 == "") {
-        document.querySelector("#subperc_4").innerHTML = `Input is empty`;
+        // document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        errormark4.innerHTML = "It must be filled";
+        errormark4.style.display = "block";
+        return false;
     }
     else {
         document.querySelector("#subperc_4").innerHTML = `${subperc}%`;
     }
 }
+
+
+
 // subject 5 result
 function chekper5() {
     let marks_5 = document.querySelector("#marks_5").value;
     let subject_5 = document.querySelector("#subject_5").value;
     let error5 = document.getElementById("error5");
+    let errormark5 = document.getElementById("errormark5");
     let letters = /^[A-Za-z ]*$/;
     let subperc_5 = marks_5 / 100 * 100;
     let subperc = subperc_5.toFixed(2);
@@ -145,18 +178,26 @@ function chekper5() {
         error5.style.display = "block";
         return false;
     }
-
-
     else if (marks_5 > 100) {
-        document.querySelector("#subperc_5").innerHTML = `Invalid Mark`;
+        // document.querySelector("#subperc_1").innerHTML = `Invalid Mark`;
+        errormark5.innerHTML = "Not more then 100";
+        errormark5.style.display = "block";
+        return false;
     }
     else if (marks_5 == "") {
-        document.querySelector("#subperc_5").innerHTML = `Input is empty`;
+        // document.querySelector("#subperc_1").innerHTML = `Input is empty`;
+        errormark5.innerHTML = "It must be filled";
+        errormark5.style.display = "block";
+        return false;
     }
     else {
         document.querySelector("#subperc_5").innerHTML = `${subperc}%`;
     }
 }
+
+
+
+
 
 // Function for Percentage
 
@@ -166,6 +207,17 @@ function percentage() {
     let marks_3 = document.querySelector("#marks_3").value;
     let marks_4 = document.querySelector("#marks_4").value;
     let marks_5 = document.querySelector("#marks_5").value;
+
+    // let subject_1 = document.getElementById(subject_1).value;
+    // let subject_2 = document.getElementById(subject_2).value;
+    // let subject_3 = document.getElementById(subject_3).value;
+    // let subject_4 = document.getElementById(subject_4).value;
+    // let subject_5 = document.getElementById(subject_5).value;
+
+
+
+
+
 
     let ObtainedMarks = parseInt(marks_1) +
         parseInt(marks_2) +

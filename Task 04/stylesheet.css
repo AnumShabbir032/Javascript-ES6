@@ -48,31 +48,31 @@ input:focus{
     background-color: #666666 !important;
     color: #666666;
 }
-#error1{
+#error1 , #errormark1{
     text-align: left;
     display: none;
     padding: 7px 10px;
     margin: 2px 5px;
 }
-#error2{
+#error2 , #errormark2{
     text-align: left;
     display: none;
     padding: 7px 10px;
     margin: 2px 5px;
 }
-#error3{
+#error3 , #errormark3{
     text-align: left;
     display: none;
     padding: 7px 10px;
     margin: 2px 5px;
 }
-#error4{
+#error4 , #errormark4{
     text-align: left;
     display: none;
     padding: 7px 10px;
     margin: 2px 5px;
 }
-#error5{
+#error5 , #errormark5{
     text-align: left;
     display: none;
     padding: 7px 10px;
