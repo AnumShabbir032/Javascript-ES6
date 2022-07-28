@@ -3,19 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body , html{
+
+body {
+    background-color: #09242c !important;
+}
+
+.cont-one {
+    background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #0d0a0b 0%, #137389 74%);
+    border: 1px solid #1b5760 !important;
+    border-radius: 0 0 15px 15px !important;
+
+}
+
+.h-main {
+    font-size: 40px !important;
+    text-align: center !important;
+    padding: 40px;
+    font-family: monospace;
+    color: #b6e0e1;
+    font-weight: 800;
+}
+
+.table thead th {
+
+    border-top: 1px solid #1b5760 !important;
+    border-bottom: 1px solid #1b5760 !important;
+    color: #b6e0e1 !important;
+    font-size: 20px !important;
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 14px !important;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: text;
+    color: #b6e0e1 !important;
+    background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #0d0a0b87 0%, #137389 74%);
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0.1 !important;
+}
+
+input:focus {
+    background-color: #137389 !important;
+    color: #b6e0e1;
+}
+
+button {
+    background-color: #137389 !important;
+    border: none !important;
+    color: #b6e0e1 !important;
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+    margin: none !important;
+    cursor: pointer !important;
+    transition-duration: 0.4s !important;
+}
+
+button:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div#result {
+    text-align: center;
+    word-spacing: 10px;
     font-size: 24px;
-    text-align: center; */
-    /* background-color: chocolate; */
-    /* background-color: #44355b; */
-/* background-image: linear-gradient(315deg, #44355b 0%, #ececec 74%); */
-/* } */
+    padding: 40px;
+    color: #b6e0e1;
+}
 
 @media only screen and (max-width: 600px) {
-    .container{
+    .container {
         width: 100%;
     }
-    
+
     .table td,
     .table th {
         padding: 5px !important;
